@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+  }
+  
+  body {
+    background-color: black;
+  }
+
+  .main-container{
+    position: fixed;
+    top:30px;
+    left:30px;
+    right:30px;
+    bottom:30px;
+    border: 2px solid white;
+  }
+  .name-container {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 20px;
+  }
+  .name-container h1 {
+    font-weight: 100;
+  }
+  .name-container h2 {
+    font-weight: 100;
+    font-size: 15px;
+    top: 20px;
+  }
+  .menu-container{
+    position: absolute;
+    top: 45%;
+    left: 30px;
+  }
+  .menu-item{
+    display: block;
+    margin: 0px 15px 0px 15px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 100;
+    margin: 5px;
+  }
+  .menu-item:hover{
+    font-size: 24px;
+    transition-duration: .5s;
+    cursor: pointer;
+  }
+
+  .info-container{
+    color: white;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    margin: 50px;
+    top: 50%;
+    width: 500px;
+  }
+  .contact-container{
+    color: white;
+    position: absolute;
+    display: block;
+    text-align: right;
+    right: 0;
+    margin: 50px;
+    top: 50%;
+    font-size: 30px;
+    overflow: visible;
+    max-width: 500px;
+  }
+  .me{
+    width: 200px;
+    position:absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 200px;
+  }
+  .cv-link {
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom:50%;
+    text-align: left;
+    margin: 15px 15px 15px 15px;
+  }
+  .cv-link{
+  display: block;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  }
+
+  .cv-link:hover{
+    font-size: 20px;
+    transition-duration: .5s;
+    cursor: pointer;
+  }
+
+  .links {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    text-align: left;
+    margin: 15px 15px 15px 15px;
+  }
+  .links a{
+  display: block;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  }
+
+  .links a:hover{
+    font-size: 20px;
+    transition-duration: .5s;
+    cursor: pointer;
+  }
+
+  .project-container{
+    position: fixed;
+    top: 45%;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    margin: 50px;
+    text-align: right;
+    list-style-type: none;
+    overflow:hidden; 
+    overflow-y:scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .project-container h1, h2{
+    display: block;
+    font-weight: 100;
+    cursor:pointer;
+  }
+  .project-container h1 {
+    font-size: 42px;
+  }
+  .project {
+    padding: 5px;
+  }
+  .project-container h2 {
+    font-size: 16px;
+    font-style: italic;
+  }
+  .project-container a{
+    text-decoration: none;
+    color: white;
+  }
+  .project-container::-webkit-scrollbar {
+    display: none;
+  }
+  .project:hover h1 {
+    font-size: 50px;
+    transition-duration: .5s;
+  }
+  @media (max-width:740px) {
+    .info-container{
+      color: white;
+      position: absolute;
+      text-align: right;
+      font-size: 14px;
+      right: 0;
+      margin: 25px;
+      top: 35%;
+      width: 300px;
+    }
+   }
+ @media (max-width:600px) {
+  .info-container{
+    color: white;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    margin: 25px;
+    top: 35%;
+    width: 250px;
+  }
+  .contact-container {
+    font-size: 16px;
+  }
+  .project:hover h1 {
+    font-size: 32px;
+    transition-duration: .5s;
+  }
+  .project-container{
+    width: 80%;
+  }
+  .project-container h1 {
+    font-size: 30px;
+  }
+  .project-container h2 {
+    font-size: 14px;
+    font-style: italic;
+  }
+ }
+
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-145deg, rgb(20, 20, 20) 50%, rgb(14, 14, 14) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-2;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .5s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s .5s, opacity .5s linear;
+}
