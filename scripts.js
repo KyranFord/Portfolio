@@ -36,3 +36,12 @@ function contactButton(){
     contactbox.innerHTML="Contact me via email @ kyranford@hotmail.co.uk or using the links!"
 }, 500);
 }
+
+// JavaScript to hide the custom scrollbar when not scrolling
+const projectContainer = document.querySelector('.project-container');
+projectContainer.addEventListener('mouseenter', () => {
+  projectContainer.classList.add('show-scrollbar');
+});
+projectContainer.addEventListener('mouseleave', () => {
+  projectContainer.classList.remove('show-scrollbar');
+});
