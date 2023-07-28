@@ -33,6 +33,6 @@ function contactButton(){
     contactbox.classList.remove("hidden");
     linkbox.classList.add("visible");
     linkbox.classList.remove("hidden");
-    contactbox.innerHTML="Contact me via email @ kyranford@hotmail.co.uk or using the links!"
+    contactbox.innerHTML="You can contact me via email at kyranford@hotmail.co.uk or give me a call at 07496442547. Additionally, you can find more about my projects and contributions on my GitHub page. I'm eager to engage with like-minded individuals and organisations, so don't hesitate to get in touch. Let's make an impact together!"
 }, 500);
 }

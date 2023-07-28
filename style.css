@@ -51,27 +51,19 @@
     cursor: pointer;
   }
 
-  .info-container{
-    color: white;
-    position: absolute;
-    text-align: right;
-    right: 0;
-    margin: 50px;
-    top: 300px;
-    width: 500px;
-  }
   .contact-container{
     color: white;
     position: absolute;
     display: block;
-    text-align: right;
+    text-align: left;
     right: 0;
     margin: 50px;
-    top: 50%;
-    font-size: 30px;
+    bottom: 0;
+    font-size: 16px;
     overflow: visible;
-    max-width: 500px;
+    width: 250px;
   }
+  
   .me{
     width: 200px;
     position:absolute;
@@ -160,29 +152,30 @@
     font-size: 50px;
     transition-duration: .5s;
   }
-  @media (max-width:740px) {
-    .info-container{
-      color: white;
-      position: absolute;
-      text-align: right;
-      font-size: 12px;
-      right: 0;
-      margin: 25px;
-      width: 300px;
-    }
-   }
+  .info-container{
+    color: white;
+    position: absolute;
+    text-align: left;
+    font-size: 16px;
+    right: 0;
+    margin: 25px;
+    bottom: 0;
+    width: 250px;
+  }
+
  @media (max-width:600px) {
   .info-container{
     color: white;
     position: absolute;
-    text-align: right;
+    text-align: left;
+    font-size: 14px;
     right: 0;
     margin: 25px;
-    top: 35%;
-    max-width: 200px;
+    bottom: 0;
+    width: 175px;
   }
   .contact-container {
-    font-size: 16px;
+    font-size: 14px;
   }
   .project:hover h1 {
     font-size: 32px;
@@ -192,7 +185,7 @@
     width: 80%;
   }
   .project-container h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
   .project-container h2 {
     font-size: 14px;
