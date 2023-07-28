@@ -175,7 +175,16 @@
     width: 175px;
   }
   .contact-container {
-    font-size: 14px;
+      color: white;
+      position: absolute;
+      display: block;
+      text-align: left;
+      right: 0;
+      margin: 50px;
+      bottom: 0;
+      font-size: 14px;
+      overflow: visible;
+      width: 160px;
   }
   .project:hover h1 {
     font-size: 32px;
