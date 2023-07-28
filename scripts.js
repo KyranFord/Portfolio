@@ -11,7 +11,7 @@ function homeButton(){
     linkbox.classList.remove("hidden")
     linkbox.classList.add("visible");
     infobox.classList.add("visible");
-    homebox.innerHTML ="Hello there! I'm a creative technologist based in the UK, blending a love for graphic design with a passion for programming. Leveraging a First Class Honours degree in Mathematics and a distinction-bound Master's in Artificial Intelligence, I marry analytical prowess with cutting-edge tech skills to craft innovative solutions. Adept at mastering new tools and technologies, I'm on the quest for challenging roles to fuel my insatiable appetite for learning and contribute my unique blend of skills. Let's reshape the future of technology, together!";  
+    homebox.innerHTML ="Hello there! I'm a creative technologist based in the UK, blending a love for graphic design with a passion for programming. Leveraging a First Class Honours degree in Mathematics and a distinction-bound Master's in Artificial Intelligence, I marry analytical prowess with cutting-edge tech skills to craft innovative solutions. Adept at mastering new tools and technologies, I'm on the quest for challenging roles to fuel my insatiable appetite for learning and contribute my unique blend of skills.";  
   }, 500);
 }
 
